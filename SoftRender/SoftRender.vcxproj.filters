@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{52897169-2048-4726-afcd-bf5fbc59defb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{8f7c57bd-48db-45ad-8d54-f4e9b14e0ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{cd233daf-adaf-4a35-a916-27145627de11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{1ecc9872-94ad-4d2e-84e7-3828ca99616d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material\SubShader">
+      <UniqueIdentifier>{7158c994-63f0-4e3c-93d1-c4062aeed062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawWindow.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDevice.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDeviceContext.cpp">
+      <Filter>Device</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTransform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawSceneManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawMeshRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MathTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawMaterial.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTexture.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShaderColor.cpp">
+      <Filter>Material\SubShader</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShader.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShaderLight.cpp">
+      <Filter>Material\SubShader</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShaderTexture.cpp">
+      <Filter>Material\SubShader</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDirectionalLight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawShaderGlobal.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawWindow.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDevice.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDeviceContext.h">
+      <Filter>Device</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTransform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCamera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawMeshRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawSceneManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawVertex.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawMaterial.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTexture.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShaderColor.h">
+      <Filter>Material\SubShader</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShader.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShaderLight.h">
+      <Filter>Material\SubShader</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShaderTexture.h">
+      <Filter>Material\SubShader</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDirectionalLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShaderType.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawShaderGlobal.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

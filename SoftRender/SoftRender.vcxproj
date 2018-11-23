@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83A98250-CB5C-4031-A7B3-7A224E4F9CF1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SoftRender</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawCamera.cpp" />
+    <ClCompile Include="DrawDevice.cpp" />
+    <ClCompile Include="DrawDeviceContext.cpp" />
+    <ClCompile Include="DrawDirectionalLight.cpp" />
+    <ClCompile Include="DrawMaterial.cpp" />
+    <ClCompile Include="DrawMath.cpp" />
+    <ClCompile Include="DrawSceneManager.cpp" />
+    <ClCompile Include="DrawShader.cpp" />
+    <ClCompile Include="DrawShaderColor.cpp" />
+    <ClCompile Include="DrawShaderGlobal.cpp" />
+    <ClCompile Include="DrawShaderLight.cpp" />
+    <ClCompile Include="DrawShaderTexture.cpp" />
+    <ClCompile Include="DrawTexture.cpp" />
+    <ClCompile Include="DrawTransform.cpp" />
+    <ClCompile Include="DrawMeshRenderer.cpp" />
+    <ClCompile Include="DrawObject.cpp" />
+    <ClCompile Include="DrawWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawCamera.h" />
+    <ClInclude Include="DrawDevice.h" />
+    <ClInclude Include="DrawDeviceContext.h" />
+    <ClInclude Include="DrawDirectionalLight.h" />
+    <ClInclude Include="DrawMaterial.h" />
+    <ClInclude Include="DrawMath.h" />
+    <ClInclude Include="DrawSceneManager.h" />
+    <ClInclude Include="DrawShader.h" />
+    <ClInclude Include="DrawShaderColor.h" />
+    <ClInclude Include="DrawShaderGlobal.h" />
+    <ClInclude Include="DrawShaderLight.h" />
+    <ClInclude Include="DrawShaderTexture.h" />
+    <ClInclude Include="DrawShaderType.h" />
+    <ClInclude Include="DrawTexture.h" />
+    <ClInclude Include="DrawVertex.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="DrawTransform.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="DrawMeshRenderer.h" />
+    <ClInclude Include="DrawObject.h" />
+    <ClInclude Include="DrawWindow.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
